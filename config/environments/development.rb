@@ -46,4 +46,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.debug_exception_response_format = :api
+
+  # Disable request forgery protection in test environment.
+  config.action_controller.allow_forgery_protection = false
 end
